@@ -1,3 +1,5 @@
-#show {
-    display: grid;
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

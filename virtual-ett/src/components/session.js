@@ -1,4 +1,5 @@
 import React from 'react';
+import './session.css'
 
 class Session extends React.Component {
     state = {
@@ -27,16 +28,25 @@ class Session extends React.Component {
                 </div>})
         return(
             <div>
-                <input onChange={(e)=>{this.setState({pastClient: e.target.value.toLowerCase()})}} />
-                <button onClick={()=>{
-                    fetch(`/pesleft/${this.state.pastClient}`)
-                    .then(res=>res.json())
-                    .then(session=>{this.setState({sessionLeft: session})});
-                    fetch(`/pesright/${this.state.pastClient}`)
-                    .then(res=>res.json())
-                    .then(session=>{this.setState({sessionRight: session})})}}>
-                View Session</button>
-                {viewSessionLeft}{viewSessionRight}
+                <div className="flex">
+                    <input onChange={(e)=>{this.setState({pastClient: e.target.value.toLowerCase()})}} />
+                    <button onClick={()=>{
+                        fetch(`/pesleft/${this.state.pastClient}`)
+                        .then(res=>res.json())
+                        .then(session=>{this.setState({sessionLeft: session})});
+                        fetch(`/pesright/${this.state.pastClient}`)
+                        .then(res=>res.json())
+                        .then(session=>{this.setState({sessionRight: session})})}}>
+                    View Session</button>
+                </div>
+                <div className="flex">
+                    <div id="sessionLeft">
+                        {viewSessionLeft}
+                    </div>
+                    <div id="sessionRight">
+                        {viewSessionRight}
+                    </div>
+                </div>
             </div>
         )
     }

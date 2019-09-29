@@ -84,7 +84,7 @@ class ClientViewLeft extends React.Component {
         })
         return(
         <div>
-            <div>
+            <div id="send-container">
                 <button onClick={this.pesLeft} style={this.props.display !== 1 ? {visibility: 'hidden'} : {visibility: 'visible'}}>Send Left PES</button>
             </div>
             <div id="container-lefter">

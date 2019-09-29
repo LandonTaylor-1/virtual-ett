@@ -1,0 +1,12 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+#sessionLeft {
+    margin:10px;
+}
+
+#sessionRight {
+    margin:10px;
+}

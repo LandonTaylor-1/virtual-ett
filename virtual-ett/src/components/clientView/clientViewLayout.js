@@ -5,7 +5,7 @@ import './clientViewLayout.css';
 
 function ClientViewLayout(props) {
     return(
-        <div id="go">
+        <div id="container">
             <ClientViewLeft /><ClientViewRight />
         </div>
     )

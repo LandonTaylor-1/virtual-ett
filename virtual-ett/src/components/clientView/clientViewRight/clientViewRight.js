@@ -79,7 +79,7 @@ class ClientViewRight extends React.Component {
         })
         return(
         <div>
-            <div>
+            <div id="send-container">
                 <button onClick={this.pesRight} style={this.props.display !== 1 ? {visibility: 'hidden'} : {visibility: 'visible'}}>Send Right PES</button>
             </div>
             <div id="container-righter">

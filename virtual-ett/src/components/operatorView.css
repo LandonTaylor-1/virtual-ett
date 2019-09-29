@@ -1,0 +1,12 @@
+#operatorView {
+    display: grid;
+}
+
+.operator-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view {
+    display: flex;
+}
