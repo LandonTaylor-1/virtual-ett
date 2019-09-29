@@ -2,8 +2,8 @@ import React from 'react';
 import './clientViewRight.scss';
 import 'whatwg-fetch';
 import io from 'socket.io-client';
-// const socket = io.connect('https://veet.herokuapp.com');
-const socket = io.connect('http://localhost:3001');
+// const socket = io.connect('https://veett.herokuapp.com');
+const socket = io.connect('https://veett.herokuapp.com') || io.connect();
 
 class ClientViewRight extends React.Component {
     constructor(props){
@@ -81,13 +81,13 @@ class ClientViewRight extends React.Component {
         <div>
             <div>
                 <button onClick={this.pesRight} style={this.props.display !== 1 ? {visibility: 'hidden'} : {visibility: 'visible'}}>Send Right PES</button>
-                {this.state.display}
             </div>
             <div id="container-righter">
                 <div id="container-right">
                     {rightEyeView}
                 </div>
             </div>
+            {this.state.display}
         </div>
         )
     }

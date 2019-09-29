@@ -29,7 +29,7 @@
 }
   
 #container-right {
-    @include on-circle($item-count: 12, $circle-size: 320px, $item-size: 20px); 
+    @include on-circle($item-count: 12, $circle-size: 300px, $item-size: 20px); 
     margin: 1em auto 0;
     
     div {
@@ -42,11 +42,10 @@
     }
 }
 #container-righter {
-  display: inline-block;
   background-color: black;
   align-items: center;
-  width: 340px;
-  height: 340px;
+  width: 320px;
+  height: 320px;
   border: 1px white solid;
   border-style: solid solid solid hidden;
 }

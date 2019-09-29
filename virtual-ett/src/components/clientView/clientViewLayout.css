@@ -1,0 +1,6 @@
+#go {
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding: 300px;
+}

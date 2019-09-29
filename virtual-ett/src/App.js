@@ -6,8 +6,9 @@ import LocationLeft from './containers/locationContainer/locationLeftContainer';
 import LocationRight from './containers/locationContainer/locationRightContainer';
 import ClientViewLeft from './containers/clientViewContainer/clientViewLeftContainer';
 import ClientViewRight from './containers/clientViewContainer/clientViewRightContainer';
+import ClientViewLayout from './components/clientView/clientViewLayout';
 import Session from './components/session';
-
+import './App.css';
 
 class App extends React.Component {
   state = {
@@ -30,20 +31,19 @@ class App extends React.Component {
         </div>
     } else if (this.state.display === 1) {
       content = 
-        <div>
+        <div id="show">
           <ColorLeft />
           <LocationLeft />
-          <ClientViewLeft display = {this.state.display}/>
+          <ClientViewLeft display={this.state.display}/>
           <ColorRight />
           <LocationRight />
-          <ClientViewRight display = {this.state.display}/>
+          <ClientViewRight display={this.state.display}/>
           <Session />
       </div>
     } else if (this.state.display === 2) {
       content = 
         <div>
-          <ClientViewLeft />
-          <ClientViewRight />
+          <ClientViewLayout />
         </div>
     }
     return (
