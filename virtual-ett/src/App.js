@@ -33,13 +33,6 @@ class App extends React.Component {
     } else if (this.state.display === 1) {
       content = 
         <div className="show">
-          {/* <ColorLeft />
-          <LocationLeft />
-          <ClientViewLeft display={this.state.display}/>
-          <ColorRight />
-          <LocationRight />
-          <ClientViewRight display={this.state.display}/>
-          <Session /> */}
           <OperatorView display={this.state.display}/>
       </div>
     } else if (this.state.display === 2) {

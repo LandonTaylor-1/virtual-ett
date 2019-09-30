@@ -1,4 +1,5 @@
 import React from 'react'
+import './view.css'
 
 class View extends React.Component {
     state ={

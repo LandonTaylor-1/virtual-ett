@@ -22,8 +22,12 @@ function OperatorView(props) {
                 </div>
             </div>
             <div className="operator-flex">
-                <ClientViewLeft display={props.display}/>
-                <ClientViewRight display={props.display}/>
+                <div className="dial">
+                    <ClientViewLeft display={props.display}/>
+                </div>
+                <div className="dial">
+                    <ClientViewRight display={props.display}/>
+                </div>
             </div>
             <Session />
         </div>

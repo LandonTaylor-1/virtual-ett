@@ -1,12 +1,20 @@
 #operatorView {
-    display: grid;
+    width: 1920px;
+    height: 1298px;
+    background-image: url(./glasses.png);
 }
 
 .operator-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    margin-top: 190px;
 }
 
 .view {
     display: flex;
+}
+
+.dial {
+    margin-left: 160px;
+    margin-right: 160px;
 }
