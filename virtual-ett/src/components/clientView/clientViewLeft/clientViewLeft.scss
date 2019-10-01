@@ -48,9 +48,14 @@
   height: 320px;
   border: 1px black solid;
   border-style: solid hidden solid solid;
+  margin-top: 50px;
 }
 
 #send-container {
   display: flex;
   justify-content: center;
+}
+
+#display {
+  margin-top: 50px;
 }

@@ -11,14 +11,23 @@ import './operatorView.css';
 function OperatorView(props) {
     return(
         <div id="operatorView">
-            <div className="operator-flex">
-                <div className="operator-flex">
-                    <ColorLeft />
-                    <LocationLeft />
+            <div id="title">Virtual Emulation - Emotional Transformation Therapy</div>
+            <div className="operator-flex-topist">
+                <div className="operator-flex-top">
+                    <div className="pad">
+                        <ColorLeft />
+                    </div>
+                    <div className="pad">
+                        <LocationLeft />
+                    </div>
                 </div>
-                <div className="operator-flex">
-                    <ColorRight />
-                    <LocationRight />
+                <div className="operator-flex-top">
+                    <div className="pad">
+                        <ColorRight />
+                    </div>
+                    <div className="pad">
+                        <LocationRight />
+                    </div>
                 </div>
             </div>
             <div className="operator-flex">

@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap');
+
+.video {
+    background-image: url(./midnight.gif);
+    width: 1200px;
+    height: 700px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.group {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.input-view {
+    height: 35px;
+    width: 225px;
+    font-family: 'Cormorant Infant', serif;
+    font-size: .55em;
+    text-align: center;
+}
+
+.button-view {
+    font-family: 'Cormorant Infant', serif;
+    font-size: .5em;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(40, 124, 192);
+    color: yellow;
+    border-radius: 5px;
+}
